@@ -1,3 +1,19 @@
+<#PSScriptInfo
+.VERSION 1.0.1
+.GUID c47f98db-0b99-4aa3-8d8c-3dd2c736700c
+.AUTHOR Atliso
+.COMPANYNAME Atliso
+.COPYRIGHT (c) 2026 Atliso. MIT License.
+.TAGS Intune LAPS WindowsLAPS Rotation Remediation EntraID
+.LICENSEURI https://github.com/Atliso-Dev/laps-rotation-audit/blob/main/LICENSE
+.PROJECTURI https://atliso.com/blog/windows-laps-password-not-rotating-fix
+.REQUIREDMODULES 
+.EXTERNALMODULEDEPENDENCIES
+.REQUIREDSCRIPTS
+.EXTERNALSCRIPTDEPENDENCIES
+.RELEASENOTES Gallery metadata added. Script logic unchanged from v1.0.0.
+#>
+
 <#
 .SYNOPSIS
     Atliso-LapsRotationAudit.ps1 - Audit and force Windows LAPS password rotation.
