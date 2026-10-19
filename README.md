@@ -1,5 +1,7 @@
 # LAPS Rotation Audit
 
+[![PowerShell Gallery](https://img.shields.io/powershellgallery/v/Atliso-LapsRotationAudit?label=PowerShell%20Gallery)](https://www.powershellgallery.com/packages/Atliso-LapsRotationAudit)
+
 PowerShell script that checks whether Windows LAPS is really rotating the local admin password, and forces a rotation when it is not.
 
 Windows LAPS can show as compliant in Intune while the local admin password has not changed in months. Compliance only means a policy is assigned, not that a rotation succeeded. This script confirms a real backup happened inside the expected window, and forces a rotation when it did not.
@@ -12,6 +14,16 @@ Windows LAPS can show as compliant in Intune while the local admin password has 
 - Forces a rotation with `Reset-LapsPassword` when nothing is confirmed
 - Reports only by default. Nothing changes until you set `-WhatIf $false`
 - Logs every action to `%LOCALAPPDATA%\Atliso\LapsRotationAudit.log`
+
+## Install
+
+From the [PowerShell Gallery](https://www.powershellgallery.com/packages/Atliso-LapsRotationAudit):
+
+```powershell
+Install-Script Atliso-LapsRotationAudit -Scope CurrentUser
+```
+
+Or download `Atliso-LapsRotationAudit.ps1` from this repo or the [latest release](../../releases/latest).
 
 ## Quick start
 
